@@ -122,26 +122,26 @@
             // Lógica do Portfólio
             const portfolioData = [
                 {
-                    image_before: 'https://placehold.co/800x600/6b7280/f0e6ff?text=Antes',
-                    image_after: 'https://placehold.co/800x600/2d2a5d/daa520?text=Depois',
+                    image_before: './src/transforma/COMIDA/ANTEScomida.png"',
+                    image_after: './src/transforma/COMIDA/DEPOIScomida.png"',
                     title: 'Restaurante Sabor Real',
                     description: 'Aumento de 40% nas Reservas Online após a criação de uma identidade visual sofisticada e otimização da presença online.'
                 },
                 {
-                    image_before: 'https://placehold.co/800x600/6b7280/f0e6ff?text=Antes',
-                    image_after: 'https://placehold.co/800x600/333333/9d72ff?text=Depois',
+                    image_before: './src/transforma/MODA/Roupas.png',
+                    image_after: './src/transforma/MODA/Modelos.png',
                     title: 'Marca Pessoal - Digital Creator',
                     description: 'Crescimento de 200% em Engajamento com a nova identidade visual, que fortaleceu a marca e gerou mais parcerias.'
                 },
                  {
-                    image_before: 'https://placehold.co/800x600/6b7280/f0e6ff?text=Antes',
-                    image_after: 'https://placehold.co/800x600/2d2a5d/f0e6ff?text=Depois',
+                    image_before: './src/transforma/POST/PostA.png',
+                    image_after: './src/transforma/POST/PostFim.png',
                     title: 'Cafeteria Aroma',
                     description: 'Elevação da Percepção de Valor através de um rebranding completo, permitindo um reposicionamento no mercado.'
                 },
                 {
-                    image_before: 'https://placehold.co/800x600/6b7280/f0e6ff?text=Antes',
-                    image_after: 'https://placehold.co/800x600/daa520/2d2a5d?text=Depois',
+                    image_before: './src/transforma/DESEMPENHO/ANTES.png',
+                    image_after: './src/transforma/DESEMPENHO/DEPOIS.png',
                     title: 'E-commerce de Moda',
                     description: 'Aumento de 35% na taxa de conversão após redesign da interface do usuário e otimização das fotos de produto.'
                 },
@@ -164,8 +164,8 @@
                 const projectCard = `
                     <div class="portfolio-item">
                         <div class="comparison-slider">
-                            <img src="${project.image_before}" alt="Imagem antes do tratamento para ${project.title}">
-                            <img src="${project.image_after}" alt="Imagem depois do tratamento para ${project.title}" class="img-top">
+                        <img src="${project.image_after}" alt="Imagem depois do tratamento para ${project.title}" class="amostra img-top">
+                        <img src="${project.image_before}" alt="Imagem antes do tratamento para ${project.title}" class="amostra ">
                             <input type="range" min="0" max="100" value="50" class="slider" aria-label="Percentage of before photo shown" oninput="updateSlider(this)">
                             <div class="slider-line"></div>
                             <div class="slider-button">
